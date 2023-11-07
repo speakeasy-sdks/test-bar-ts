@@ -1,5 +1,5 @@
 # Config
-(*config*)
+(*.config*)
 
 ### Available Operations
 
@@ -13,7 +13,7 @@ Subscribe to webhooks.
 
 ```typescript
 import { AnotherTestBar } from "test-bar-ts";
-import { SubscribeToWebhooksRequestBodyWebhook } from "test-bar-ts/dist/sdk/models/operations";
+import { Webhook } from "test-bar-ts/dist/sdk/models/operations";
 
 (async() => {
   const sdk = new AnotherTestBar({
@@ -33,10 +33,10 @@ import { SubscribeToWebhooksRequestBodyWebhook } from "test-bar-ts/dist/sdk/mode
 
 ### Parameters
 
-| Parameter                                                        | Type                                                             | Required                                                         | Description                                                      |
-| ---------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------- |
-| `request`                                                        | [operations.SubscribeToWebhooksRequestBody[]](../../models//.md) | :heavy_check_mark:                                               | The request object to use for the request.                       |
-| `config`                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)     | :heavy_minus_sign:                                               | Available config options for making requests.                    |
+| Parameter                                                    | Type                                                         | Required                                                     | Description                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| `request`                                                    | [operations.RequestBody[]](../../models//.md)                | :heavy_check_mark:                                           | The request object to use for the request.                   |
+| `config`                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config) | :heavy_minus_sign:                                           | Available config options for making requests.                |
 
 
 ### Response
