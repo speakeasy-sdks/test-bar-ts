@@ -32,6 +32,8 @@ yarn add https://github.com/speakeasy-sdks/test-bar-ts
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
+### Example
+
 ```typescript
 import { AnotherTestBar } from "test-bar-ts";
 
@@ -83,7 +85,7 @@ import { AnotherTestBar } from "test-bar-ts";
 <!-- End Dev Containers -->
 
 <!-- Start Error Handling -->
-# Error Handling
+## Error Handling
 
 Handling errors in this SDK should largely match your expectations.  All operations return a response object or throw an error.  If Error objects are specified in your OpenAPI Spec, the SDK will throw the appropriate Error type.
 
@@ -92,8 +94,7 @@ Handling errors in this SDK should largely match your expectations.  All operati
 | errors.APIError  | 5XX              | application/json |
 | errors.SDKError  | 400-600          | */*              |
 
-
-## Example
+Example
 
 ```typescript
 import { AnotherTestBar } from "test-bar-ts";
@@ -121,9 +122,9 @@ import { AnotherTestBar } from "test-bar-ts";
 <!-- End Error Handling -->
 
 <!-- Start Server Selection -->
-# Server Selection
+## Server Selection
 
-## Select Server by Name
+### Select Server by Name
 
 You can override the default server globally by passing a server name to the `server: string` optional parameter when initializing the SDK client instance. The selected server will then be used as the default on the operations that use it. This table lists the names associated with the available servers:
 
@@ -132,14 +133,7 @@ You can override the default server globally by passing a server name to the `se
 | `prod` | `https://speakeasy.bar` | None |
 | `staging` | `https://staging.speakeasy.bar` | None |
 | `customer` | `https://{organization}.{environment}.speakeasy.bar` | `environment` (default is `prod`), `organization` (default is `api`) |
-
-
-Some of the server options above contain variables. If you want to set the values of those variables, the following options are provided for doing so:
- * `environment: models.ServerEnvironment`
-
- * `organization: string`
-
-For example:
+#### Example
 
 ```typescript
 import { AnotherTestBar } from "test-bar-ts";
@@ -159,11 +153,15 @@ import { AnotherTestBar } from "test-bar-ts";
 
 ```
 
+#### Variables
 
-## Override Server URL Per-Client
+Some of the server options above contain variables. If you want to set the values of those variables, the following optional parameters are available when initializing the SDK client instance:
+ * `environment: models.ServerEnvironment`
+ * `organization: string`
+
+### Override Server URL Per-Client
 
 The default server can also be overridden globally by passing a URL to the `serverURL: str` optional parameter when initializing the SDK client instance. For example:
-
 ```typescript
 import { AnotherTestBar } from "test-bar-ts";
 
@@ -184,10 +182,9 @@ import { AnotherTestBar } from "test-bar-ts";
 <!-- End Server Selection -->
 
 <!-- Start Custom HTTP Client -->
-# Custom HTTP Client
+## Custom HTTP Client
 
 The Typescript SDK makes API calls using the (axios)[https://axios-http.com/docs/intro] HTTP library.  In order to provide a convenient way to configure timeouts, cookies, proxies, custom headers, and other low-level configuration, you can initialize the SDK client with a custom `AxiosInstance` object.
-
 
 For example, you could specify a header for every request that your sdk makes as follows:
 
@@ -199,7 +196,6 @@ const httpClient = axios.create({
     headers: {'x-custom-header': 'someValue'}
 })
 
-
 const sdk = new AnotherTestBar({defaultClient: httpClient});
 ```
 <!-- End Custom HTTP Client -->
@@ -207,9 +203,9 @@ const sdk = new AnotherTestBar({defaultClient: httpClient});
 
 
 <!-- Start Authentication -->
-# Authentication
+## Authentication
 
-## Per-Client Security Schemes
+### Per-Client Security Schemes
 
 This SDK supports the following security scheme globally:
 
@@ -218,7 +214,6 @@ This SDK supports the following security scheme globally:
 | `apiKey` | apiKey   | API key  |
 
 To authenticate with the API the `apiKey` parameter must be set when initializing the SDK client instance. For example:
-
 ```typescript
 import { AnotherTestBar } from "test-bar-ts";
 
