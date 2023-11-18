@@ -1,6 +1,6 @@
 {
   "name": "test-bar-ts",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "author": "anuraag-test",
   "scripts": {
     "prepare": "tsc --build",
