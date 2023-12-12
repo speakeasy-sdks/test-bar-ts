@@ -19,9 +19,9 @@ Get a drink by name, if authenticated this will include stock levels and product
 ```typescript
 import { AnotherTestBar } from "test-bar-ts";
 
-(async() => {
+async function run() {
   const sdk = new AnotherTestBar({
-    apiKey: "",
+    apiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.drinks.getDrink({
@@ -31,7 +31,9 @@ import { AnotherTestBar } from "test-bar-ts";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -62,17 +64,17 @@ Get a list of drinks, if authenticated this will include stock levels and produc
 import { AnotherTestBar } from "test-bar-ts";
 import { DrinkType } from "test-bar-ts/dist/sdk/models/shared";
 
-(async() => {
-  const sdk = new AnotherTestBar({
-    apiKey: "",
-  });
+async function run() {
+  const sdk = new AnotherTestBar();
 
   const res = await sdk.drinks.listDrinks({});
 
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

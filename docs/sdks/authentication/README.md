@@ -18,9 +18,9 @@ Authenticate with the API by providing a username and password.
 ```typescript
 import { AnotherTestBar } from "test-bar-ts";
 
-(async() => {
+async function run() {
   const sdk = new AnotherTestBar({
-    apiKey: "",
+    apiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.authentication.authenticate({});
@@ -28,7 +28,9 @@ import { AnotherTestBar } from "test-bar-ts";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

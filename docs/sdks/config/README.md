@@ -15,9 +15,9 @@ Subscribe to webhooks.
 import { AnotherTestBar } from "test-bar-ts";
 import { Webhook } from "test-bar-ts/dist/sdk/models/operations";
 
-(async() => {
+async function run() {
   const sdk = new AnotherTestBar({
-    apiKey: "",
+    apiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.config.subscribeToWebhooks([
@@ -27,7 +27,9 @@ import { Webhook } from "test-bar-ts/dist/sdk/models/operations";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

@@ -19,9 +19,9 @@ Create an order for a drink.
 import { AnotherTestBar } from "test-bar-ts";
 import { OrderType } from "test-bar-ts/dist/sdk/models/shared";
 
-(async() => {
+async function run() {
   const sdk = new AnotherTestBar({
-    apiKey: "",
+    apiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.orders.createOrder({
@@ -37,7 +37,9 @@ import { OrderType } from "test-bar-ts/dist/sdk/models/shared";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

@@ -1,10 +1,10 @@
-<!-- Start SDK Example Usage -->
+<!-- Start SDK Example Usage [usage] -->
 ```typescript
 import { AnotherTestBar } from "test-bar-ts";
 
-(async () => {
+async function run() {
     const sdk = new AnotherTestBar({
-        apiKey: "",
+        apiKey: "<YOUR_API_KEY_HERE>",
     });
 
     const res = await sdk.drinks.getDrink({
@@ -14,7 +14,9 @@ import { AnotherTestBar } from "test-bar-ts";
     if (res.statusCode == 200) {
         // handle response
     }
-})();
+}
+
+run();
 
 ```
-<!-- End SDK Example Usage -->
+<!-- End SDK Example Usage [usage] -->
