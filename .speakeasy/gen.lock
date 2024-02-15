@@ -4,15 +4,15 @@ management:
   docChecksum: 8f27a31f7c8db7031d59e44e22e0a9d2
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.225.2
-  releaseVersion: 0.5.0
-  configChecksum: 6ee1d608d00d09403e21cd8822908219
+  generationVersion: 2.258.0
+  releaseVersion: 0.5.1
+  configChecksum: 9945e55009bab30d36faf83c984ce00c
   repoURL: https://github.com/speakeasy-sdks/test-bar-ts.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/test-bar-ts
 features:
   typescript:
-    core: 3.4.1
+    core: 3.4.7
     errors: 2.81.8
     examples: 2.81.3
     globalSecurity: 2.82.2
