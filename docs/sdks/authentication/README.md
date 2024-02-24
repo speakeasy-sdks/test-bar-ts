@@ -19,9 +19,7 @@ Authenticate with the API by providing a username and password.
 import { AnotherTestBar } from "test-bar-ts";
 
 async function run() {
-  const sdk = new AnotherTestBar({
-    apiKey: "<YOUR_API_KEY_HERE>",
-  });
+  const sdk = new AnotherTestBar();
 
   const res = await sdk.authentication.authenticate({});
 

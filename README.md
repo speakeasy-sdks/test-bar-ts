@@ -98,9 +98,7 @@ Example
 import { AnotherTestBar } from "test-bar-ts";
 
 async function run() {
-    const sdk = new AnotherTestBar({
-        apiKey: "<YOUR_API_KEY_HERE>",
-    });
+    const sdk = new AnotherTestBar();
 
     let res;
     try {
@@ -146,7 +144,6 @@ import { AnotherTestBar } from "test-bar-ts";
 async function run() {
     const sdk = new AnotherTestBar({
         server: "customer",
-        apiKey: "<YOUR_API_KEY_HERE>",
     });
 
     const res = await sdk.authentication.authenticate({});
@@ -175,7 +172,6 @@ import { AnotherTestBar } from "test-bar-ts";
 async function run() {
     const sdk = new AnotherTestBar({
         serverURL: "https://speakeasy.bar",
-        apiKey: "<YOUR_API_KEY_HERE>",
     });
 
     const res = await sdk.authentication.authenticate({});
