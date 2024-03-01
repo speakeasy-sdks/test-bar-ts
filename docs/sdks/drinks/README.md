@@ -65,9 +65,7 @@ import { AnotherTestBar } from "test-bar-ts";
 import { DrinkType } from "test-bar-ts/dist/sdk/models/shared";
 
 async function run() {
-  const sdk = new AnotherTestBar({
-    apiKey: "<YOUR_API_KEY_HERE>",
-  });
+  const sdk = new AnotherTestBar();
 
   const res = await sdk.drinks.listDrinks({});
 
