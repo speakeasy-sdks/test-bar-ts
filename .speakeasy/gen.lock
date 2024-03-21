@@ -3,10 +3,10 @@ id: bb6615c0-9f38-428a-8bff-8c6b3bf41f50
 management:
   docChecksum: 8f27a31f7c8db7031d59e44e22e0a9d2
   docVersion: 1.0.0
-  speakeasyVersion: 1.207.1
-  generationVersion: 2.280.6
-  releaseVersion: 0.7.1
-  configChecksum: 50860f822a47e02e5e45d53ce8c9116b
+  speakeasyVersion: 1.215.1
+  generationVersion: 2.286.4
+  releaseVersion: 0.7.2
+  configChecksum: 4e2181fa9528b5507ea6a1d8245fc8f5
   repoURL: https://github.com/speakeasy-sdks/test-bar-ts.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/test-bar-ts
@@ -16,7 +16,7 @@ features:
     core: 3.4.8
     errors: 2.81.8
     examples: 2.81.3
-    globalSecurity: 2.82.4
+    globalSecurity: 2.82.5
     globalServerURLs: 2.82.2
     inputOutputModels: 2.83.0
     serverIDs: 2.81.2
